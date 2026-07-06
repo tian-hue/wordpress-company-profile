@@ -56,3 +56,8 @@ add_action( 'wp_enqueue_scripts', 'nusantara_scripts' );
  * Customizer additions.
  */
 require get_template_directory() . '/inc/customizer.php';
+
+/**
+ * Custom Post Types.
+ */
+require get_template_directory() . '/inc/cpt-services.php';
