@@ -1,7 +1,7 @@
 # WordPress Core
 wp-admin/
 wp-includes/
-*.php
+/*.php
 !wp-config.php
 !index.php
 
