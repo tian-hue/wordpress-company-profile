@@ -61,3 +61,8 @@ require get_template_directory() . '/inc/customizer.php';
  * Custom Post Types.
  */
 require get_template_directory() . '/inc/cpt-services.php';
+
+/**
+ * Performance Optimizations.
+ */
+require get_template_directory() . '/inc/performance.php';
