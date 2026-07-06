@@ -51,3 +51,8 @@ function nusantara_scripts() {
     wp_enqueue_script( 'nusantara-header-script', get_template_directory_uri() . '/assets/js/header.js', array(), '1.0.0', true );
 }
 add_action( 'wp_enqueue_scripts', 'nusantara_scripts' );
+
+/**
+ * Customizer additions.
+ */
+require get_template_directory() . '/inc/customizer.php';
