@@ -43,7 +43,11 @@ add_action( 'after_setup_theme', 'nusantara_setup' );
  * Enqueue Scripts and Styles
  */
 function nusantara_scripts() {
-    // We will enqueue our custom CSS and JS architecture files here later.
+    // Core style
     wp_enqueue_style( 'nusantara-style', get_stylesheet_uri(), array(), '1.0.0' );
+    
+    // Header component
+    wp_enqueue_style( 'nusantara-header-style', get_template_directory_uri() . '/assets/css/header.css', array(), '1.0.0' );
+    wp_enqueue_script( 'nusantara-header-script', get_template_directory_uri() . '/assets/js/header.js', array(), '1.0.0', true );
 }
 add_action( 'wp_enqueue_scripts', 'nusantara_scripts' );
